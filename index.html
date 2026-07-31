@@ -36,7 +36,13 @@
       </svg>
     </button>
 
-    <nav class="nav-links">
+    <!-- Mobile menu button (hidden on desktop) -->
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
       <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
       <a href="#about"><i class="fa-solid fa-user"></i> About</a>
       <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
@@ -464,30 +470,6 @@
     <p>© <span id="yr"></span> Sajid. Built with HTML &amp; CSS.</p>
   </footer>
 
-  <script>
-    const year = document.getElementById("yr");
-    const themeToggle = document.getElementById("themeToggle");
-    const root = document.documentElement;
-
-    year.textContent = new Date().getFullYear();
-
-    function updateThemeButton(theme) {
-      const isDark = theme === "dark";
-      themeToggle.setAttribute("aria-pressed", String(isDark));
-      themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
-      themeToggle.title = isDark ? "Light mode" : "Dark mode";
-    }
-
-    updateThemeButton(root.getAttribute("data-theme"));
-
-    themeToggle.addEventListener("click", () => {
-      const currentTheme = root.getAttribute("data-theme");
-      const nextTheme = currentTheme === "dark" ? "light" : "dark";
-
-      root.setAttribute("data-theme", nextTheme);
-      localStorage.setItem("portfolio-theme", nextTheme);
-      updateThemeButton(nextTheme);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
