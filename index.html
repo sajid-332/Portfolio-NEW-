@@ -1,0 +1,493 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Portfolio of Sajid Mahmud, a Computer Science and Engineering student interested in software engineering, web development, and cybersecurity."/>
+  <title>Sajid — Portfolio</title>
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      const theme = savedTheme === "dark" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav">
+    <a href="#home" class="brand">Sajid Mahmud<span class="dot">.</span></a>
+
+    <!-- Batman theme toggle -->
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="bat-icon" viewBox="0 0 512 256" aria-hidden="true">
+        <path d="M256 39c17 33 35 49 57 49 20 0 35-12 45-34 17 36 45 59 95 59-28 16-48 38-61 70-33-23-70-30-111-20-10 3-18 16-25 40-7-24-15-37-25-40-41-10-78-3-111 20-13-32-33-54-61-70 50 0 78-23 95-59 10 22 25 34 45 34 22 0 40-16 57-49Z"/>
+      </svg>
+    </button>
+
+    <nav class="nav-links">
+      <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+      <a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="#contact"><i class="fa-solid fa-envelope-open-text"></i> Contact</a>
+      <a href="assests/cv/Sajid_Mahmud.pdf"target="_blank" rel="noopener noreferrer"> <i class="fa-regular fa-file-lines"></i> CV</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <ul class="float-logos" aria-hidden="true">
+  <li class="c-badge">C</li>
+  <li class="cpp-badge">C++</li>
+  <li class="cs-badge">C#</li>
+  <li><i class="fa-brands fa-html5"></i></li>
+  <li><i class="fa-brands fa-css3-alt"></i></li>
+  <li><i class="fa-brands fa-java"></i></li>
+  <li><i class="fa-brands fa-python"></i></li>
+  <li><i class="fa-brands fa-js"></i></li>
+  <li><i class="fa-brands fa-openai"></i></li>
+</ul>
+
+    <div class="hero-inner">
+      <div class="avatar" aria-label="Batman avatar" title="It's me 👋">
+        <span class="bat">🦇</span>
+      </div>
+
+      <div class="code-card">
+        <div class="clip"></div>
+        <pre>
+01 &lt; <span>Hello, I’m <b>Sajid</b></span> &gt;
+02 &lt; <span>I’m a <b>Computer Science &amp; engineering student</b></span> &gt;
+03 &lt; <span>I love to design and develop <b>web sites</b></span> &gt;
+04 &lt; <span>I have a secret and that is — <b>I'm Batman</b> 🦇</span> &gt;
+        </pre>
+      </div>
+
+      <p class="sub">I also enjoy branding, clean UI, and building helpful tools.</p>
+    </div>
+
+    <a href="#about" class="scroll-cta"><strong>Read more</strong> <i class="fa-solid fa-arrow-down"></i></a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <h2>About <span class="accent">Me</span></h2>
+
+    <div class="about-grid">
+      <article class="about-card">
+        <h3>🔹Introduction</h3>
+        <p><b>Sajid</b> — an enthusiastic learner and aspiring software engineer who loves C++, Java, Python, and front-end design. Curious by nature, I enjoy solving problems, building projects, and learning how technology shapes the world.</p>
+        <p>
+          <strong>Education</strong><br>
+        <strong>B.Sc. in Computer Science and Engineering</strong><br>
+        International Islamic University Chittagong (IIUC)
+    </p>
+
+    <p>
+        <strong>Higher Secondary School Certificate (HSC)</strong><br>
+        Chattogram Government Model College
+    </p>
+
+    <p>
+        <strong>Secondary School Certificate (SSC)</strong><br>
+        Narirabad Government Boys' High School
+    </p>
+      </article>
+
+      <article class="about-card">
+        <h3>🔹 Background</h3>
+        <p>
+          I am a student developer with hands-on practice in:
+          <br><br>
+          <b>C++</b>: algorithms, data structures, and console applications.<br>
+          <strong>C#:</strong> .NET applications, WPF desktop development, layered architecture, and database integration.<br>
+          <b>Python</b>: utilities, automation scripts, and information-gathering tools.<br>
+          <b>Web</b>: HTML, CSS, and JavaScript for clean front-end interfaces.<br>
+          <b>Java</b>: currently strengthening my backend development skills.<br>
+          <b>Cybersecurity</b>: exploring ethical hacking with Kali Linux, practicing with tools like theHarvester, Red Hawk, Sherlock, and learning information gathering.
+          <br><br>
+          This mix gives me exposure to both software engineering and security practices, which I aim to combine in my future career.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <h3>🔹 Goal</h3>
+        <p>
+          My goal is to grow into a well-rounded software engineer and cybersecurity professional, capable of writing efficient algorithms (C++/Java), automating workflows with Python scripting, designing and deploying web applications, and understanding system security, vulnerabilities, and ethical hacking.
+          <br><br>
+          Long-term, I aim to contribute to real-world solutions in software engineering, ethical hacking, and secure application design.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <h3>🔹 From me</h3>
+        <p>
+          I believe in writing clean, readable, and maintainable code; building user-friendly interfaces; and learning by doing with small projects, quick iterations and continuous improvement. Collaboration and teamwork matter to me, and I value feedback and mentorship. My portfolio reflects not just what I’ve learned, but how I keep growing.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+<section id="skills" class="section skills-section">
+  <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills &amp; <span class="accent">Tech Experience</span></h2>
+
+  <!-- Languages -->
+  <div class="tech-group">
+    <h3>Languages</h3>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C logo">
+        <span>C</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ logo">
+        <span>C++</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo">
+        <span>Java</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="fa-solid fa-database tech-icon sql-icon"></i>
+        <span>SQL</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo">
+        <span>Python</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# logo">
+        <span>C#</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frontend -->
+  <div class="tech-group">
+    <h3>Frontend</h3>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <img class="tech-img invert-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js logo">
+        <span>Next.js</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React logo">
+        <span>React</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native logo">
+        <span>React Native</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite logo">
+        <span>Vite</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma logo">
+        <span>Figma</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS logo">
+        <span>Tailwind CSS</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Backend -->
+  <div class="tech-group">
+    <h3>Backend</h3>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo">
+        <span>Node.js</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Database -->
+  <div class="tech-group">
+    <h3>Database</h3>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo">
+        <span>MySQL</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo">
+        <span>MongoDB</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Other -->
+  <div class="tech-group">
+    <h3>Other</h3>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <img class="tech-img invert-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask logo">
+        <span>Flask</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Kali Linux logo">
+        <span>Kali Linux</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entertainment -->
+  <div class="tech-group">
+    <h3>Entertainment</h3>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg" alt="ESP32 logo">
+        <span>ESP32</span>
+      </div>
+
+      <div class="tech-card">
+        <img class="tech-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino logo">
+        <span>Arduino</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <h2><i class="fa-solid fa-diagram-project"></i> Projects <span class="accent">Showcase</span></h2>
+
+    <!-- Bachelor's Point  -->
+    <div class="proj-grid">
+     <article class="proj-card">
+
+    <div
+      class="proj-thumb"
+      style="background-image: url('assests/images/bachelors-point.jpg');">
+    </div>
+
+    <div class="proj-body">
+      <h3>Bachelor's Point — .NET Web Application</h3>
+
+      <p>
+        A full-featured web application developed with C# and .NET using
+        layered architecture. It includes Google OAuth authentication,
+        SSLCommerz payment integration, admin approval workflow and pagination.
+      </p>
+
+      <div class="stack">
+        <span>C#</span>
+        <span>.NET</span>
+        <span>OAuth</span>
+        <span>SSLCommerz</span>
+      </div>
+    </div>
+
+    <div class="proj-actions">
+      <a
+        class="icon-btn big"
+        href="https://github.com/Mahmud2702/Bachelor-s-Point"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="GitHub Repository"
+        aria-label="Bachelor's Point GitHub repository">
+
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+
+  </article>
+
+      <!-- BFIM -->
+
+      <article class="proj-card">
+
+  <div class="proj-thumb"
+       style="background-image:url('assests/images/bfim.png');">
+  </div>
+
+  <div class="proj-body">
+    <h3>B-FIM — Blockchain File Integrity Monitor</h3>
+
+    <p>
+      A real-time file integrity monitoring system built with C#, .NET and WPF.
+      It uses SHA-256 hashing, blockchain-style chained records, SQLite storage,
+      ECDSA signatures and file verification to detect unauthorized file changes.
+    </p>
+
+    <div class="stack">
+      <span>C#</span>
+      <span>.NET</span>
+      <span>WPF</span>
+      <span>SQLite</span>
+      <span>Cybersecurity</span>
+    </div>
+  </div>
+
+  <div class="proj-actions">
+    <a class="icon-btn big"
+       href="https://github.com/sajid-332/BFIM"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="GitHub Repository"
+       aria-label="B-FIM GitHub Repository">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+</article>
+
+           <! -- ForEver -->
+
+      <article class="proj-card">
+
+  <div class="proj-thumb"
+       style="background-image:url('assests/images/forever.jpg');">
+  </div>
+
+  <div class="proj-body">
+    <h3>Forever — Full-Stack E-Commerce Website</h3>
+
+    <p>
+      A full-stack e-commerce platform with product browsing, shopping cart,
+      checkout and order management features. I contributed to frontend
+      development and integration to create a smooth and responsive user experience.
+    </p>
+
+    <div class="stack">
+      <span>Full Stack</span>
+      <span>JavaScript</span>
+      <span>Responsive</span>
+      <span>E-Commerce</span>
+    </div>
+  </div>
+
+  <div class="proj-actions">
+    <a class="icon-btn big"
+       href="https://github.com/montaherul/forever"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="GitHub Repository"
+       aria-label="Forever GitHub Repository">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+</article>
+
+    </div>
+
+    <div class="more-wrap">
+      <a class="see-more-btn"
+   href="https://github.com/sajid-332"
+   target="_blank"
+   rel="noopener noreferrer">
+  See more
+  <i class="fa-solid fa-arrow-right"></i>
+  </a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <h2><i class="fa-solid fa-envelope-open-text"></i> Contact <span class="accent">Me</span></h2>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:sajidmahmud000789@gmail.com" target="_blank" rel="noopener">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <h4>Gmail</h4>
+          <p>sajidmahmud000789@gmail.com</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="#" title="Add full WhatsApp number here">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div>
+          <h4>WhatsApp</h4>
+          <p>01770-6197**</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://github.com/sajid-332" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <p>github.com/sajid-332</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="#" title="LinkedIn link coming soon">
+        <i class="fa-brands fa-linkedin"></i>
+        <div>
+          <h4>LinkedIn</h4>
+          <p>Coming soon</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="yr"></span> Sajid. Built with HTML &amp; CSS.</p>
+  </footer>
+
+  <script>
+    const year = document.getElementById("yr");
+    const themeToggle = document.getElementById("themeToggle");
+    const root = document.documentElement;
+
+    year.textContent = new Date().getFullYear();
+
+    function updateThemeButton(theme) {
+      const isDark = theme === "dark";
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+      themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+      themeToggle.title = isDark ? "Light mode" : "Dark mode";
+    }
+
+    updateThemeButton(root.getAttribute("data-theme"));
+
+    themeToggle.addEventListener("click", () => {
+      const currentTheme = root.getAttribute("data-theme");
+      const nextTheme = currentTheme === "dark" ? "light" : "dark";
+
+      root.setAttribute("data-theme", nextTheme);
+      localStorage.setItem("portfolio-theme", nextTheme);
+      updateThemeButton(nextTheme);
+    });
+  </script>
+</body>
+</html>
